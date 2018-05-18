@@ -3,20 +3,21 @@
 <head>
 	<meta charset="UTF-8">
 	<link rel="stylesheet" href="css/style.css">
-	<script>  type="text/javascript" src="js/script.js"	</script>
+	<script async type="text/javascript" src="js/script.js"></script>
+
 	<title>Calculadora</title>
 </head>
 <body>
 	<div class="padre" id="info">
-        <form class="calc" >
+        <form class="calc" id="xy">
           <h2>CALCULADORA</h2>
             <div class="caja">
               <output id="operando"></output>
-              <output id="caja"></input>
+              <output id="resultado"></output>
             </div>
             <div class="botones">
                 <input type="button" value="C" id="c">
-                <input type="button" value="()" id="o">
+                <input type="button" value="()"id="o">
                 <input type="button" value="%" id="%">
                 <input type="button" value="/" id="/">
                 <br>
@@ -27,7 +28,7 @@
                 <br>
                 <input type="button" value="4" id="4">
                 <input type="button" value="5" id="5">
-                <input type="button" value="6" id="6">
+                <input class="xd" type="button" value="6" id="num-6">
                 <input type="button" value="-" id="-">
                 <br>
                 <input type="button" value="1" id="1">
@@ -42,7 +43,9 @@
                 <br>
             </div>
         </form>
+        
+
     </div>
-	
+    
 </body>
 </html>

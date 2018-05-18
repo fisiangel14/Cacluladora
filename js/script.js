@@ -2,19 +2,22 @@
 La estructura del html se divide en nodos y elementos
   Tipos de Nodos
 Document --> Nodo Raiz
-Element --> Reprep las etiquetas
+Element --> Reprepresenta las etiquetas
 Attr --> los atributos de las etiquetas
-Text -->el valor de estas
+Text -->el valor de los elemntos
 Comment --> Xomentarios
+
   Obtener los nodos del html
 var botones = document.getElementById("7");
 var botones1 = document.getElementsByTagName('imput');
 var botones2 = document.getElementsByName()
+
   Crear nodo de tipo Element
 var parr = document.createElement("p");
 var text = document.createTextNode("Esto es una calculadora");
 parr.appendChild(text);
 document.body.appendChild(parr);
+
   Eliminar nodos
 var boton = document.getElementById("8");
 nodoPadre.removeChil(nodoHijo)
@@ -22,7 +25,7 @@ boton.parentNode.removeChild(boton);
   Acceder atributos
 var botones = document.getElementsByTagName("h2");*/
 
-/ /*Eliminar nodos*/
+//*Eliminar nodos*/
 // var boton = document.getElementById("8");
 // /*nodoPadre.removeChil(nodoHijo)*/
 // boton.parentNode.removeChild(boton);
@@ -98,10 +101,48 @@ id=caja
 id=8
 */
 
+
+
+/*
+var boton = document.getElementsById("6");
+//alert(boton.length);
+//nodoPadre.removeChil(nodoHijo)
+
+boton.parentNode.removeChild(boton);
+
+var marquitos =document.getElementById("info");
+marquitos.appendChild(boton);
+*/
+
+function resalta(elEvento) {
+  var boton = document.getElementsById("6");
+
+  var evento = elEvento || window.event;
+  
+  switch(evento.type) {
+    case 'mouseover':
+      this.style.borderColor = 'black';
+      break;
+    case 'mouseout':
+      this.style.borderColor = 'silver';
+      break;
+  }
+}
+
+//document.body.appendChild(marquitos);
+
+
+/*
+var b = document.createElement("imput");
+var tipo = document.createTextNode("8");
+b.appendChild(tipo);
+document.body.appendChild(b);
+*/
+/*
 function ver(){
 	var caja = document.getElementById("caja");
 	caja.value="8";
-}
+}*/
 
 //var boton = document.getElementById("8");
 //boton.onclick = ver;
@@ -117,7 +158,7 @@ function ver(){
 	}
 
  */
-
+/*
 window.onload = function() {
   document.onkeyup = muestraInformacion;
   document.onkeypress = muestraInformacion;
@@ -131,5 +172,6 @@ function muestraInformacion(elEvento) {
                 "Propiedad keyCode: " + evento.keyCode + "<br>" +
                 "Propiedad charCode: " + evento.charCode + "<br>" +
                 "Carácter pulsado: " + String.fromCharCode(evento.charCode);
-	info.innerHTML += "<br>--------------------------------------<br>" + mensaje;
+	info.innerHTML += "<br>--------------------------------------<br>" + mensaje
 }     
+*/
