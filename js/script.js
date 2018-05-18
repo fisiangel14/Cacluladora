@@ -179,4 +179,8 @@ function muestraInformacion(elEvento) {
 function suma(){
 }
 
+function resta(){
+}
+
+
 
