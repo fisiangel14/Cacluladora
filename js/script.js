@@ -175,3 +175,8 @@ function muestraInformacion(elEvento) {
 	info.innerHTML += "<br>--------------------------------------<br>" + mensaje
 }     
 */
+
+function resta(){
+}
+
+
