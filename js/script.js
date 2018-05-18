@@ -176,17 +176,18 @@ function muestraInformacion(elEvento) {
 }     
 */
 
-<<<<<<< HEAD
-=======
+//<<<<<<< HEAD
+//=======
 function suma(){
 }
 
->>>>>>> R1
+//>>>>>>> R1
 function resta(){
 }
 
-
+/*
 <<<<<<< HEAD
 =======
 
 >>>>>>> R1
+*/
